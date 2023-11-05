@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Alaa Abdelbaki}}}} % First name
+
+	\vspace{6pt}
+
+	{\Large Mobile developer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% \icon{Globe}{11}{\href{http://alaaabdelbaki.github.io}{alaaabdelbaki.github.io}}\\
+	\icon{Phone}{11}{+216 41 675 757}\\
+	\icon{MapMarker}{11}{Ariana, Tunisia}\\
+
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\icon{Envelope}{11}{\href{mailto:alaa.abdelbaki@outlook.com}{alaa.abdelbaki@outlook.com}}\\
+	\icon{Github}{11}{\href{https://github.com/AlaaAbdelbaki}{github.com/AlaaAbdelbaki}}\\
+	\icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/AlaaAbdelbaki}{/in/AlaaAbdelbaki}}\\
+
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+	\cvsect{Summary}
+	\vspace{-6pt}
+
+	I'm a mobile software engineer, with 2 years of experience in developing cross platform applications with the Flutter framework.\\
+	While developing mobile applications, I had the chance to also work on their backend, and ensure submitting them on the Google Play Store and the Apple App Store.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+	\cvsect{Skills}
+	\vspace{-6pt}
+
+	\begin{minipage}[t]{0.2\textwidth}
+		\textbf{Languages:}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.73\textwidth}
+		Dart, Java, Kotlin, Swift, Javascript, C\#.
+	\end{minipage}
+	\vspace{4mm}
+
+	\begin{minipage}[t]{0.2\textwidth}
+		\textbf{Technologies:}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.73\textwidth}
+		Flutter, Git, Android, iOS, Jenkins, NestJS, ExrpessJS, NextJS.
+	\end{minipage}
+
+\end{minipage}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\newcommand{\printlist}[1]{%
+	\foreach \x [count=\xi] in {#1} {\texttt{\x} \slashsep }%
+}
+\vspace{10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+	{07/2023 -- Present}
+	{Flutter developer}
+	{\href{https://www.e-butler.com}{EButler}}
+	{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item Added new features to an existing Flutter application.
+			\item Worked on improving the real-time chatting feature using GetStream's Stream Chat library.
+			\item Maintained legacy code.
+			\item Upgraded the project to newer SDK versions, while performing the required code changes.
+			\item Pushed updates through the Google Play Store.
+			\item Developed a redesigned version for mobile and web platforms while referencing a Figma design.
+			\item Implemented new features and perform updates on a NestJS backend.
+		\end{itemize}
+		\printlist{Flutter,NestJs,Firebase,Firebase Cloud Messaging,GetStream,Google Play,App Store,WhatsApp Business API}}
+	\entry
+	{01/2022 -- 06/2023}
+	{Software Engineer}
+	{\href{https://www.swisspremiumnegoce.com}{Swiss Premium Negoce}}
+	{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item Defined the project's usecases and requirements.
+			\item Decided which technologies to use based on the technical requirements.
+			\item Created the database design.
+			\item Developed the mobile application's UI based on an Adobe XD design.
+			\item Added new features and updating existing ones.
+			\item Developed backend features.
+			\item Write backend documentatio
+			\item Implemented Google Cloud APIs in the mobile application (Google Maps / Google Directions)
+			\item Integrated Stripe as a payment Gateway.
+			\item Submitted and releacing the application on the Google Play Store and the Apple App Store.
+		\end{itemize}
+
+		\printlist{Flutter,Firebase,Firebase Cloud Messaging, Google Maps API, Google Directions API, ExpressJS, Stripe}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+	\entry
+	{09/2018 - 06/2022}
+	{Engineering degree in computer science}
+	{\href{https://www.esprit.tn}{School}}
+	{Followed the computer science program, and specialized in mobile applications development\\Worked on multiple projects in different fields during the cursus, including:
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
+			\item Mobile development.
+			\item Web development.
+			\item Artificial intelligence.
+			\item computer vision.
+			\item DevOps.
+		\end{itemize}
+	}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+	\entry
+	{Flutter / ExpressJS}
+	{Elisys}
+	{
+		% GithubLink
+	}
+	{
+		A warehouse management mobile application, that helps technicians manage their products by simply scanning a QR code.
+	}
+	\entry
+	{Flutter}
+	{Doroos}
+	{
+		% GithubLink
+	}
+	{
+		An online learning application, where users can choose from a wide variety of subjects and teachers, and chat with them in real time.
+	}
+\end{entrylist}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Languages}
+\vspace{-6pt}
+
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0.18\textwidth]
+	\item \textbf{English} - Fluent
+	\item \textbf{French} - B2
+	\item \textbf{Arabic} - Native
+\end{itemize}
+
+% \hspace{26mm} \textbf{English} - Fluent, \textbf{ French} - B2, \textbf{ Arabic} - Native
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
