@@ -1,0 +1,216 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth}
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    { \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Alaa Abdelbaki}}}} % First name
+
+    \vspace{6pt}
+
+    {\Large Développeur mobile} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+    % \icon{Globe}{11}{\href{http://alaaabdelbaki.github.io}{alaaabdelbaki.github.io}}\\
+    \icon{Phone}{11}{+216 41 675 757}\\
+    \icon{MapMarker}{11}{Ariana, Tunisie}\\
+
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+    \icon{Envelope}{11}{\href{mailto:alaa.abdelbaki@outlook.com}{alaa.abdelbaki@outlook.com}}\\
+    \icon{Github}{11}{\href{https://github.com/AlaaAbdelbaki}{github.com/AlaaAbdelbaki}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/AlaaAbdelbaki}{/in/AlaaAbdelbaki}}\\
+
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{À propos}
+    \vspace{-6pt}
+
+    Je suis un ingénieur en informatique avec 2 ans d'expérience en développement des applications mobiles natives, cross-platform avec Flutter, et les déployer de suite sur Google Play Store et Apple App Store.\\J'ai eu la chance de travailler aussi sur le coté backend des applications mobiles principalement avec Javascript.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Compétences}
+    \vspace{-6pt}
+
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+        Dart, Java, Kotlin, Swift, Javascript, C\#.
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+        Flutter, Git, Android, iOS, Jenkins, NestJS, ExrpessJS, NextJS.
+    \end{minipage}
+
+\end{minipage}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\newcommand{\printlist}[1]{%
+    \foreach \x [count=\xi] in {#1} {\texttt{\x} \slashsep }%
+}
+\vspace{10 pt}
+\cvsect{Expériences professionnelles}
+\begin{entrylist}
+    \entry
+    {07/2023 -- Presént}
+    {Développeur Flutter}
+    {\href{https://www.e-butler.com}{EButler}}
+    {\vspace{-10pt}
+
+        % Ajouter description ici ↓ et laisser cet espace ↑
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Ajout de nouvelles fonctionnalités à une application Flutter existante.
+            \item Amélioration de la fonctionnalité de la messagerie instantannée en utilisant la biblothèque de GetStream.
+            \item Maintenance de l'ancien code.
+            \item Mise à jour du projet vers la nouvelle version de l'SDK Flutter en effectuant les changements nécessaires pour assurer le bon fonctionnement de l'application.
+            \item Déployer les mises à jour sur Google Play.
+            \item Développement du nouveau design de l'application mobile et web, en suivant un design Figma comme référence.
+            \item Développement des nouvelles fonctionnalités, et mettre à jour l'ancien code sur un backend NestJS.
+        \end{itemize}
+        \printlist{Flutter,NestJs,Firebase,Firebase Cloud Messaging,GetStream,Google Play,App Store,WhatsApp Business API}}
+    \entry
+    {01/2022 -- 06/2023}
+    {Ingénieur logiciel}
+    {\href{https://www.swisspremiumnegoce.com}{Swiss Premium Negoce}}
+    {\vspace{-10pt}
+
+
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Définition des cas d'utilisation, les besoins fonctionnels et non fonctionnels du projet.
+            \item Choisir les technologies à utiliser après définition du cahier de charge du projet.
+            \item Modélisation de la base de données.
+            \item Développement des interfaces utilisateur en suivant un design Adobe XD.
+            \item Ajout de nouvelles fonctionnalités et amélioration de celles existantes.
+            \item Développement des fonctionnalités sur un backend ExpressJS.
+            \item Développer la documentation du backend, en suivant les standards OpenAPI.
+            \item Implémentation des APIs Google Cloud dans l'application mobile (Google Maps / Google Directions)
+            \item Intégration de Stripe comme une passerelle de paiement.
+            \item Envoi et déploiement des application sur les stores Google Play et App Store.
+        \end{itemize}
+        \printlist{Flutter,Firebase,Firebase Cloud Messaging, Google Maps API, Google Directions API, ExpressJS, Stripe}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Formation}
+\begin{entrylist}
+    \entry
+    {09/2018 - 06/2022}
+    {Diplome National d'ingénieur en informatique}
+    {\href{https://www.esprit.tn}{Ecole Sup. Privée d'Informatique et de Technologies (ESPRIT)}}
+    {Suivi le cursus d'ingénierie en informatique option systèmes informatiques et mobiles.\\Travaillé sur plusieurs projets tout au long de ce cursus:
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
+            \item Développement des applications Android et iOS.
+            \item Développement web.
+            \item intelligence artificielle.
+            \item Computer vision.
+            \item DevOps.
+        \end{itemize}
+    }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+% \cvsect{Projets}
+% \begin{entrylist}
+%     \entry
+%     {Flutter / ExpressJS}
+%     {Elisys}
+%     {
+%         % GithubLink
+%     }
+%     {
+%         Application de gestion de dépôt permettant aux techniciens de gérer leurs produits en scanannt leurs QR codes.
+%     }
+%     \entry
+%     {Flutter}
+%     {Doroos}
+%     {
+%         % GithubLink
+%     }
+%     {
+%         Une plateforme d'éducation en ligne qui aide les utilisateurs à trouver des enseignants de différentes matières, et assurer une messagerie instantannée entre les deux.
+%     }
+% \end{entrylist}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Langues}
+\vspace{-6pt}
+
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0.18\textwidth]
+    \item \textbf{Anglais} - Courant
+    \item \textbf{Français} - B2
+    \item \textbf{Arabe} - Langue maternelle
+\end{itemize}
+
+% \hspace{26mm} \textbf{English} - Fluent, \textbf{ French} - B2, \textbf{ Arabic} - Native
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
