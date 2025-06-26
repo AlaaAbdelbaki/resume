@@ -29,6 +29,10 @@
 
 \begin{document}
 
+
+\newcommand{\printlist}[1]{%
+    \foreach \x [count=\xi] in {#1} {\texttt{\x} \slashsep }%
+}
 %----------------------------------------------------------------------------------------
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -40,7 +44,7 @@
 
     \vspace{6pt}
 
-    {\Large Développeur mobile} % Career or current job title
+    {\Large Étudiant en Master Cloud} % Career or current job title
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
@@ -48,8 +52,8 @@
 
     % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
     % \icon{Globe}{11}{\href{http://alaaabdelbaki.github.io}{alaaabdelbaki.github.io}}\\
-    \icon{Phone}{11}{+216 41 675 757}\\
-    \icon{MapMarker}{11}{Ariana, Tunisie}\\
+    \icon{Phone}{11}{06 68 52 56 99}\\
+    \icon{MapMarker}{11}{Avignon, France}\\
 
 \end{minipage}
 \begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
@@ -66,64 +70,76 @@
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.46\textwidth}
+\begin{minipage}[t]{\textwidth}
     \cvsect{À propos}
     \vspace{-6pt}
 
-    Je suis un ingénieur en informatique avec 2 ans d'expérience en développement des applications mobiles natives, cross-platform avec Flutter, et les déployer de suite sur Google Play Store et Apple App Store.\\J'ai eu la chance de travailler aussi sur le coté backend des applications mobiles principalement avec Javascript.
+    Étudiant en Master Cloud avec deux ans d'expérience en développement d'applications mobiles (principalement avec Flutter), de la conception jusqu'au déploiement sur Google Play et Apple App Store.
+
+    Actuellement à la recherche d'une alternance pour l'année universitaire 2025/2026 dans le domaine du Cloud/DevOps, je souhaite mettre à profit mes compétences techniques tout en continuant à apprendre au sein d'une équipe innovante.
 \end{minipage}
-\hfill % Whitespace between
-\begin{minipage}[t]{0.465\textwidth}
-    \cvsect{Compétences}
-    \vspace{-6pt}
-
-    \begin{minipage}[t]{0.2\textwidth}
-        \textbf{Languages:}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.73\textwidth}
-        Dart, Java, Kotlin, Swift, Javascript, C\#.
-    \end{minipage}
-    \vspace{4mm}
-
-    \begin{minipage}[t]{0.2\textwidth}
-        \textbf{Technologies:}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.73\textwidth}
-        Flutter, Git, Android, iOS, Jenkins, NestJS, ExrpessJS, NextJS.
-    \end{minipage}
-
+\begin{minipage}[t]{\textwidth}
+    \cvsect{Compétences Techniques}\\
+    \vspace{6pt}
+    \textbf{Langages \& Frameworks: } \printlist{Flutter, NestJS, ExpressJS, NextJS, Shell Scripting, Java}\\
+    \vspace{6pt}
+    \textbf{Devops \& Cloud: } \printlist{Docker, Kubernetes, Proxmox, Jenkins}\\
+    \vspace{6pt}
+    \textbf{Outils \& Services: } \printlist{Firebase, GetStream, Git, Google Cloud API, Stripe}\\
+    \vspace{6pt}
+    \textbf{Systèmes d'exploitation: } \printlist{Linux, Windows, MacOS, Android, iOS}\\
+    \vspace{6pt}
+    \textbf{Design \& Prototypage: } \printlist{Figma, Adobe XD}
+    \vspace{-12pt}
 \end{minipage}
+% \hfill % Whitespace between
+% \begin{minipage}[t]{0.465\textwidth}
+%     \cvsect{Compétences}
+%     \vspace{-6pt}
+
+%     \begin{minipage}[t]{0.2\textwidth}
+%         \textbf{Languages:}
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}[t]{0.73\textwidth}
+%         Dart, Java, Kotlin, Swift, Javascript, C\#.
+%     \end{minipage}
+%     \vspace{4mm}
+
+%     \begin{minipage}[t]{0.2\textwidth}
+%         \textbf{Technologies:}
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}[t]{0.73\textwidth}
+%         Flutter, Git, Android, iOS, Jenkins, NestJS, ExrpessJS, NextJS, Kubernetes, Docker, Proxmox, Shell Scripting.
+%     \end{minipage}
+
+% \end{minipage}
 
 
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
-\newcommand{\printlist}[1]{%
-    \foreach \x [count=\xi] in {#1} {\texttt{\x} \slashsep }%
-}
+
 \vspace{10 pt}
 \cvsect{Expériences professionnelles}
 \begin{entrylist}
     \entry
-    {07/2023 -- Presént}
+    {07/2023 -- 08/2024}
     {Développeur Flutter}
     {\href{https://www.e-butler.com}{EButler}}
     {\vspace{-10pt}
-
         % Ajouter description ici ↓ et laisser cet espace ↑
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item Ajout de nouvelles fonctionnalités à une application Flutter existante.
-            \item Amélioration de la fonctionnalité de la messagerie instantannée en utilisant la biblothèque de GetStream.
-            \item Maintenance de l'ancien code.
-            \item Mise à jour du projet vers la nouvelle version de l'SDK Flutter en effectuant les changements nécessaires pour assurer le bon fonctionnement de l'application.
-            \item Déployer les mises à jour sur Google Play.
-            \item Développement du nouveau design de l'application mobile et web, en suivant un design Figma comme référence.
-            \item Développement des nouvelles fonctionnalités, et mettre à jour l'ancien code sur un backend NestJS.
+            \item Développement de nouvelles fonctionnalités sur une application Flutter existante
+            \item Amélioration de la messagerie instantanée avec GetStream
+            \item Migration vers les dernières versions de Flutter SDK
+            \item Déploiement des mises à jour sur Google Play \& App Store
+            \item Conception d'un nouveau design mobile \& web à partir de maquettes Figma
+            \item Développement du backend avec NestJS
         \end{itemize}
-        \printlist{Flutter,NestJs,Firebase,Firebase Cloud Messaging,GetStream,Google Play,App Store,WhatsApp Business API}}
+        \printlist{Flutter, NestJS, Firebase, GetStream, WhatsApp Business API}}
     \entry
     {01/2022 -- 06/2023}
     {Ingénieur logiciel}
@@ -132,36 +148,47 @@
 
 
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item Définition des cas d'utilisation, les besoins fonctionnels et non fonctionnels du projet.
-            \item Choisir les technologies à utiliser après définition du cahier de charge du projet.
-            \item Modélisation de la base de données.
-            \item Développement des interfaces utilisateur en suivant un design Adobe XD.
-            \item Ajout de nouvelles fonctionnalités et amélioration de celles existantes.
-            \item Développement des fonctionnalités sur un backend ExpressJS.
-            \item Développer la documentation du backend, en suivant les standards OpenAPI.
-            \item Implémentation des APIs Google Cloud dans l'application mobile (Google Maps / Google Directions)
-            \item Intégration de Stripe comme une passerelle de paiement.
-            \item Envoi et déploiement des application sur les stores Google Play et App Store.
+            \item Recueil des besoins et élaboration des cas d'utilisation
+            \item Choix des technologies et modélisation de la base de données
+            \item Conception des interfaces utilisateurs avec Adobe XD
+            \item Développement full-stack (Flutter + ExpressJS)
+            \item Intégration des API Google Cloud (Maps, Directions)
+            \item Mise en place de Stripe pour les paiements
+            \item Déploiement sur Google Play \& App Store
         \end{itemize}
-        \printlist{Flutter,Firebase,Firebase Cloud Messaging, Google Maps API, Google Directions API, ExpressJS, Stripe}}
+        \printlist{Flutter, ExpressJS, Firebase, Google Cloud API, Stripe}}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \vspace{-10 pt}
-\cvsect{Formation}
+\cvsect{Parcours académique}
 \begin{entrylist}
+    \entry
+    {09/2024 - 06/2026}
+    {Master Informatique - Infrastructures Cloud \& Systèmes Distribués (SYRIUS)}
+    {\href{https://formations.univ-avignon.fr/formation/master-informatique-systemes-informatiques-communicants-reseaux-services-et-securite-sicom/}{Université d'Avignon}}
+    {
+        Ce master m'a permis de développer une expertise approfondie en technologies cloud et en architectures distribuées. Il met l'accent sur les compétences pratiques liées au DevOps et à la virtualisation, et inclut un projet académique dédié à l'intelligence artificielle..
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
+            \item Virtualisation, conteneurisation et orchestration.
+            \item Intelligence artificielle.
+            \item Sécurité des systèmes et cryptographie.
+        \end{itemize}
+    }
+
     \entry
     {09/2018 - 06/2022}
     {Diplome National d'ingénieur en informatique}
     {\href{https://www.esprit.tn}{Ecole Sup. Privée d'Informatique et de Technologies (ESPRIT)}}
-    {Suivi le cursus d'ingénierie en informatique option systèmes informatiques et mobiles.\\Travaillé sur plusieurs projets tout au long de ce cursus:
+    {
+        Au cours de cette formation d'ingénieur, j'ai acquis de solides bases en informatique, allant du développement logiciel à l'intelligence artificielle, tout en menant plusieurs projets concrets orientés mobile, web et DevOps.
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
-            \item Développement des applications Android et iOS.
+            \item Développement d'applications Android et iOS.
             \item Développement web.
-            \item intelligence artificielle.
-            \item Computer vision.
+            \item Intelligence artificielle.
+            \item Vision par ordinateur.
             \item DevOps.
         \end{itemize}
     }
@@ -198,13 +225,13 @@
 %----------------------------------------------------------------------------------------
 %	LANGUAGES
 %----------------------------------------------------------------------------------------
-\vspace{-10 pt}
+\vspace{-20 pt}
 \cvsect{Langues}
 \vspace{-6pt}
 
 \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0.18\textwidth]
-    \item \textbf{Anglais} - Courant
     \item \textbf{Français} - B2
+    \item \textbf{Anglais} - Courant
     \item \textbf{Arabe} - Langue maternelle
 \end{itemize}
 
