@@ -25,6 +25,8 @@
 \setlength{\columnsep}{0mm}
 %----------------------------------------------------------------------------------------
 \usepackage{lipsum}  
+\usepackage{float}
+\usepackage{tabularx}
 
 
 \begin{document}
@@ -74,9 +76,9 @@
     \cvsect{À propos}
     \vspace{-6pt}
 
-    Étudiant en Master Cloud avec deux ans d'expérience en développement d'applications mobiles (principalement avec Flutter), de la conception jusqu'au déploiement sur Google Play et Apple App Store.
+    Étudiant en Master Cloud, je bénéficie de deux ans d'expérience dans le développement d'applications mobiles, principalement avec Flutter, couvrant l'ensemble du cycle, de la conception au déploiement sur Google Play et l'Apple App Store.
 
-    Actuellement à la recherche d'une alternance pour l'année universitaire 2025/2026 dans le domaine du Cloud/DevOps, je souhaite mettre à profit mes compétences techniques tout en continuant à apprendre au sein d'une équipe innovante.
+    À la recherche d'une alternance pour l'année universitaire 2025/2026, je souhaite intégrer un environnement dynamique dans les domaines du Cloud, DevOps ou du développement web/mobile, avec un rythme alterné de 2 semaines en entreprise et 2 semaines en formation. Motivé et curieux, je suis désireux de mettre mes compétences techniques au service d'une équipe innovante tout en continuant à développer mon expertise.
 \end{minipage}
 \begin{minipage}[t]{\textwidth}
     \cvsect{Compétences Techniques}\\
@@ -86,8 +88,8 @@
     \textbf{Devops \& Cloud: } \printlist{Docker, Kubernetes, Proxmox, Jenkins}\\
     \vspace{6pt}
     \textbf{Outils \& Services: } \printlist{Firebase, GetStream, Git, Google Cloud API, Stripe}\\
-    \vspace{6pt}
-    \textbf{Systèmes d'exploitation: } \printlist{Linux, Windows, MacOS, Android, iOS}\\
+    % \vspace{6pt}
+    % \textbf{Systèmes d'exploitation: } \printlist{Linux, Windows, MacOS, Android, iOS}\\
     \vspace{6pt}
     \textbf{Design \& Prototypage: } \printlist{Figma, Adobe XD}
     \vspace{-12pt}
@@ -132,7 +134,6 @@
     {\vspace{-10pt}
         % Ajouter description ici ↓ et laisser cet espace ↑
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item Développement de nouvelles fonctionnalités sur une application Flutter existante
             \item Amélioration de la messagerie instantanée avec GetStream
             \item Migration vers les dernières versions de Flutter SDK
             \item Déploiement des mises à jour sur Google Play \& App Store
@@ -148,15 +149,13 @@
 
 
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item Recueil des besoins et élaboration des cas d'utilisation
-            \item Choix des technologies et modélisation de la base de données
             \item Conception des interfaces utilisateurs avec Adobe XD
             \item Développement full-stack (Flutter + ExpressJS)
             \item Intégration des API Google Cloud (Maps, Directions)
             \item Mise en place de Stripe pour les paiements
             \item Déploiement sur Google Play \& App Store
         \end{itemize}
-        \printlist{Flutter, ExpressJS, Firebase, Google Cloud API, Stripe}}
+        \printlist{Flutter, ExpressJS, NextJS, Firebase, Google Cloud API, Stripe}}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -167,10 +166,12 @@
 \begin{entrylist}
     \entry
     {09/2024 - 06/2026}
-    {Master Informatique - Infrastructures Cloud \& Systèmes Distribués (SYRIUS)}
+    {Master Informatique - Infrastructures Cloud \& Systèmes Distribués (SYRIUS)
+        \vspace{-10pt}
+    }
     {\href{https://formations.univ-avignon.fr/formation/master-informatique-systemes-informatiques-communicants-reseaux-services-et-securite-sicom/}{Université d'Avignon}}
     {
-        Ce master m'a permis de développer une expertise approfondie en technologies cloud et en architectures distribuées. Il met l'accent sur les compétences pratiques liées au DevOps et à la virtualisation, et inclut un projet académique dédié à l'intelligence artificielle..
+        % Formation axée sur le cloud, les systèmes distribués et les pratiques DevOps, avec un projet en intelligence artificielle portant sur la génération de mots de passe à partir de données compromises, soulignant les risques liés au réemploi d'identifiants.
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
             \item Virtualisation, conteneurisation et orchestration.
             \item Intelligence artificielle.
@@ -181,9 +182,11 @@
     \entry
     {09/2018 - 06/2022}
     {Diplome National d'ingénieur en informatique}
-    {\href{https://www.esprit.tn}{Ecole Sup. Privée d'Informatique et de Technologies (ESPRIT)}}
+    {\href{https://www.esprit.tn}{Ecole Sup. Privée d'Informatique et de Technologies (ESPRIT)}
+        \vspace{-10pt}
+    }
     {
-        Au cours de cette formation d'ingénieur, j'ai acquis de solides bases en informatique, allant du développement logiciel à l'intelligence artificielle, tout en menant plusieurs projets concrets orientés mobile, web et DevOps.
+        % Formation d'ingénieur axée sur les fondamentaux de l'informatique, couvrant le développement logiciel, l'intelligence artificielle et les pratiques DevOps, avec la réalisation de projets concrets dans les domaines mobile et web.
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
             \item Développement d'applications Android et iOS.
             \item Développement web.
@@ -197,27 +200,28 @@
 %----------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
-% \cvsect{Projets}
-% \begin{entrylist}
-%     \entry
-%     {Flutter / ExpressJS}
-%     {Elisys}
-%     {
-%         % GithubLink
-%     }
-%     {
-%         Application de gestion de dépôt permettant aux techniciens de gérer leurs produits en scanannt leurs QR codes.
-%     }
-%     \entry
-%     {Flutter}
-%     {Doroos}
-%     {
-%         % GithubLink
-%     }
-%     {
-%         Une plateforme d'éducation en ligne qui aide les utilisateurs à trouver des enseignants de différentes matières, et assurer une messagerie instantannée entre les deux.
-%     }
-% \end{entrylist}
+\vspace{-20 pt}
+\cvsect{Projets}
+\begin{entrylist}
+    \entry
+    {2023}
+    {Elisys}
+    {
+        \href{https://play.google.com/store/apps/details?id=fr.elisys.mobile&hl=en}{Google Play}
+    }
+    {
+        Application de gestion de dépôt permettant aux techniciens de gérer leurs produits en scanannt leurs QR codes.
+    }
+    \entry
+    {2024}
+    {\href{https://mazadlive.net/en}{Mazad Live}}
+    {
+        \href{https://play.google.com/store/apps/details?id=mazad.live.app&hl=en}{Google Play} \& \href{https://apps.apple.com/tn/app/mzad-live/id6463001872}{App Store}
+    }
+    {
+        Une platforme de vente aux enchères en ligne, développée avec Flutter, permettant aux utilisateurs de participer à des enchères en direct sur des produits variés.
+    }
+\end{entrylist}
 
 
 
@@ -229,13 +233,16 @@
 \cvsect{Langues}
 \vspace{-6pt}
 
+
 \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0.18\textwidth]
-    \item \textbf{Français} - B2
-    \item \textbf{Anglais} - Courant
+    \item \textbf{Français} - Niveau avancé
+    \item \textbf{Anglais} - Niveau avancé
     \item \textbf{Arabe} - Langue maternelle
 \end{itemize}
 
-% \hspace{26mm} \textbf{English} - Fluent, \textbf{ French} - B2, \textbf{ Arabic} - Native
+
+
+% \hspace{26mm} \textbf{Français} - Niveau avancé, \textbf{ Anglais} - Niveau avancé, \textbf{ Arabe} - Langue maternelle
 
 %----------------------------------------------------------------------------------------
 
